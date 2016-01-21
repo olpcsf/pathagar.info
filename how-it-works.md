@@ -13,11 +13,11 @@ see Pathagar in action.
 Pathagar works without an Internet connection.
 
 
-## ODPS feeds
+## OPDS feeds
 
-The [Open Publication Distribution System (ODPS)](http://opds-spec.org/specs/)
+The [Open Publication Distribution System (OPDS)](http://opds-spec.org/specs/)
 allows different publication sources to publish a catalog, allowing a client to
-pull publications from any ODPS compatible source. This means that a client can
+pull publications from any OPDS compatible source. This means that a client can
 browse catalogs from multiple Pathagar instances and download publications from
 any one of them.
 
