@@ -9,18 +9,16 @@ see Pathagar in action.
 
 ## Sugar Labs
 
-[libarary.sugarlabs.org](http://library.sugarlabs.org/latest/)
+[library.sugarlabs.org](http://library.sugarlabs.org/)
 
 
-## Jamaica
+## OLPC Jamaica
 
-[Jamaica demo](http://108.171.173.65/latest/)
+[OLPC Jamaica demo](http://108.171.173.65/)
 
 
 ## With the RACHEL pi
 
-Often deployments want to deploy a school server providing several network
-services like Wifi, DHCP, DNS etc, in addition to content.
-[RACHEL](http://worldpossible.org/) provides all of that.
+Often deployments want to deploy a school server providing several network services like Wifi, DHCP, DNS etc, in addition to content. [RACHEL](http://worldpossible.org/) provides all of that.
 
 [Pathagar with RACHEL pi](http://204.14.156.167/)

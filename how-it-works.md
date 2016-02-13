@@ -4,8 +4,7 @@ title: How it works
 permalink: /how-it-works/
 ---
 
-Here are some examples of where Pathagar has been deployed. Here's where you can
-see Pathagar in action.
+Here are some examples of where Pathagar has been deployed. Here's where you can see Pathagar in action.
 
 
 ## Offline
@@ -24,7 +23,7 @@ any one of them.
 
 ## Rich documentation
 
-Here you can learn more about how to install and deploy Pathagar yourself.
+Here you can learn more about how to install and deploy Pathagar yourself (coming soon).
 
 
 ## More resources
