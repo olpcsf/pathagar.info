@@ -25,6 +25,10 @@ any one of them.
 
 Here you can learn more about how to install and deploy Pathagar yourself (coming soon).
 
+* Raspberry Pi
+    Look in the `pi` dirctory for notes on how   
+    pathagar can be installed on a Raspberry Pi.  
+    (This is still a work in progress.)
 
 ## More resources
 
