@@ -28,7 +28,7 @@ graphical user interface) which is not needed for a server.
 ### Updating the Image
 
 With the `Pi` connected (via an ethernet cable) to the internet,
-run `raspi-config' and then upgrade the `OS`.  Details of raspi-config
+run `raspi-config` and then upgrade the `OS`.  Details of raspi-config
 can be found in `server-setup/raspi-config`.  Once this is done, use
 `rsync` to copy the `server-setup` directory structure from this
 repostitory to `/home/pi/`.  Then, as user `pi`::
