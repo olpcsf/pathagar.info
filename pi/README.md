@@ -1,4 +1,8 @@
-##Raspberry Pi as a Content Server
+---
+layout: default
+title: Pathagar on Raspberry Pi
+---
+## Raspberry Pi as a Content Server
 
 ### Overview
 
@@ -49,10 +53,62 @@ commands::
     sudo su
     source create_server.sh
     
+### Pathagar Specific Instructions
+
+See ~/olpcSF/Pathagar/Aaron/history.txt
+
+#### Bring in Pathagar and its Dependencies
+
+The following is described in the [RachelSetup directory
+hierarchy](https://github.com/alexKleider/olpcSF/tree/master/RachelSetup);
+the essentials .
+Specifically, the update.sh and create_server.sh scripts should have
+been already sourced.  
+
+It is suggested to use the user pi home directory to serve as a home
+for Pathagar.  If you are logged in as user pi::
+
+    cd
+    git clone https://github/pathagarbooks/pathagar.git
+    cd pathagar
+    sudo apt-get instal python-virtualenv
+    virtualenv -p python2.7 penv
+    source penv/bin/activate  # 'deactivate' when done.
+    pip install -r requirements.pip
+    cd <directory/where/this/README/is/found>
+    cp local_settings.py ~/pathagar/
+
+The __last two commands__ serve to customize settings and serve to
+accomplish what would otherwise have to be done by the following:<br>
+IF you've done the above, NO NEED TO DO THE FOLLOWING:<br>
+Edit the settings.py file and preface the static directory
+with '/library':<br>
+STATIC_URL = '/library/static/'<br>
+and add two lines:<br>
+FORCE_SCRIPT_NAME = '/library'<br>
+LOGIN_REDIRECT_URL = FORCE_SCRIPT_NAME<br>
+
+#### Apache Web Server
+
+Since we wish to serve pathagar along with other content, an
+appropriate apache2 conf file is provided.
+
+    cd <directory/where/this/README/is/found>
+    sudo cp pathagar.conf4pi /etc/apache2/sites-available/pathagar.conf
+    sudo a2ensite pathagar.conf
+    sudo service apache2 reload
+    python manage.py syncdb
+    python manage.py runserver 0.0.0.0:8000
+    # Teminate server with CTL-C
+
+#  Notes to myself:
+
+A paragraph<sup>[1](#myfootnote1)</sup> that has a foot note.
+
+Other stuff goes here.
+
+### Footnotes 
+
+<a name="myfootnote1">1</a>:  Some explanation of the paragraph above.
 
 
-
-Can simulate FOOT NOTES as follows:
-    <a name="myfootnote1">1</a>: Footnote content goes here
-    Then reference it at some other place in the document like this
-    <sup>[1](#myfootnote1)</sup>

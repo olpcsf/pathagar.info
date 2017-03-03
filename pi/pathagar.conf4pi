@@ -1,0 +1,8 @@
+WSGIScriptAlias /library /home/alex/pathagar/wsgi.py
+WSGIPythonPath /home/alex/pathagar:/home/alex/pathagar/venv/lib/python2.7/site-packages
+
+<Directory /home/alex/pathagar>
+<Files wsgi.py>
+Require all granted
+</Files>
+</Directory>
