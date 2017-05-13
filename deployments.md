@@ -15,10 +15,3 @@ see Pathagar in action.
 ## OLPC Jamaica
 
 [OLPC Jamaica demo](http://108.171.173.65/)
-
-
-## With the RACHEL pi
-
-Often deployments want to deploy a school server providing several network services like Wifi, DHCP, DNS etc, in addition to content. [RACHEL](http://worldpossible.org/) provides all of that.
-
-[Pathagar with RACHEL pi](http://204.14.156.167/)
