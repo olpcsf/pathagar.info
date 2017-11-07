@@ -1,0 +1,31 @@
+RUN RASPI_CONFIG
+
+Log on as user 'pi' with password 'raspberry'.
+
+Begin by running the raspi-config command::
+
+    raspi-config
+
+The root file system's partition is expanded to use all of the available
+SD card capacity.  After this you are given the opportunity to change
+many of the configuration settings:
+    1. File system expansion (already done.)
+    2. Default user is pi, I've been changing the pw to pi::root
+    3. Boot into the command line (My preferred default.)
+    4. Internationalization:
+        Default language: en_us.UTF-8  (change from en_gb.UTF-8)
+        Time zone: America, Los_Angeles. (New Pacific)
+        Keyboard: generic 105-key seems to work
+            English US
+            default
+            no compose key
+            Control-Alt-Backspace to exit Xwindow
+    5...7. Left in the default state.
+    8. Advanced options:
+        A2. Host name: set to rpi1, rpi2, rachel, (you choose.)
+        A4. SSH enabled (I believe this is the default.)
+        I believe the other options can be ignored.
+Once done go ahead and reboot as suggested::
+
+    sudo shutdown -r now
+
