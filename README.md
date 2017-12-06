@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/olpc-sf/pathagar.info.svg?style=svg)](https://circleci.com/gh/olpc-sf/pathagar.info)
+
 # Pathagar
 
 Pathagar is an offline digital learning library. This repo contains the
