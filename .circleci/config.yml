@@ -1,0 +1,24 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.4-node
+    steps:
+      - checkout
+      - type: cache-restore
+        name: Restore gem bundle
+        key: bundle-{{ checksum "Gemfile.lock" }}
+      - run:
+          name: Bundle install
+          command: bundle install --path vendor/bundle
+      - type: cache-save
+        name: Store bundle cache
+        key: bundle-{{ checksum "Gemfile.lock" }}
+        paths:
+          - vendor/bundle
+      - run:
+          name: Build site
+          command: make build
+      - run:
+          name: Run tests
+          command: make test
