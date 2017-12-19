@@ -10,6 +10,7 @@ deployment.
 - [I already have a server with a Linux OS installed.](#ubuntu)
 - [I need a low-power device with everything included.](#raspberry-pi)
 - [I want to try out Pathagar in a virtual machine.](#virtualbox)
+- [I want the Pathagar source code.](https://github.com/pathagarbooks/pathagar)
 
 Setting up Pathagar is the same as setting up any other Django application.
 You'll want to install a database (MySQL, PostgreSQL, etc.) and a webserver
