@@ -1,7 +1,6 @@
 ---
 title: Get Pathagar
 layout: page
-permalink: /get-pathagar/
 ---
 
 There are many ways to get Pathagar. Choose the option that’s right for your
@@ -29,11 +28,15 @@ Follow these automated instructions for setting up Pathagar on [Ubuntu
 
 ## Raspberry Pi
 
-If you’d like to install Pathagar on an embedded device like the Raspberry Pi,
-our [phInfo repo](https://github.com/alexKleider/phInfo) has step by step
-instructions for selecting a device and installing Pathagar. This configuration
-also acts as a WiFi access point, so you can use the Raspberry Pi as a school
-server.
+If you’d like to install Pathagar on the Raspberry Pi, you can
+[download](https://drive.google.com/open?id=1MTF1nfocvWp3gH7dyx4ITbkxbVlIj6Ze)
+an image and install it to SD card. This configuration also acts as a WiFi
+access point, so you can use the Raspberry Pi as a school server. Once
+downloaded, follow the instructions from the [Raspberry
+Pi website](https://www.raspberrypi.org/documentation/installation/installing-images/README.md).
+
+This images is created from our step-by-step instructions at [phInfo
+repo](https://github.com/alexKleider/phInfo).
 
 
 ## VirtualBox
