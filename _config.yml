@@ -17,3 +17,8 @@ github_username:  pathagarbooks
 
 # Build settings
 markdown: kramdown
+
+google_analytics: UA-114063224-1
+
+plugins:
+  - jekyll-seo-tag

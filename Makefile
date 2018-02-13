@@ -1,4 +1,7 @@
 
+production:
+	JEKYLL_ENV=production bundle exec jekyll build
+
 build:
 	bundle exec jekyll build
 
