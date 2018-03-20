@@ -35,6 +35,8 @@ instructions for selecting a device and installing Pathagar. This configuration
 also acts as a WiFi access point, so you can use the Raspberry Pi as a school
 server.
 
+We’ve tested this on the Raspberry Pi 3 and the Raspberry Pi Zero W.
+
 
 ## VirtualBox
 
