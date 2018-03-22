@@ -38,6 +38,8 @@ Pi website](https://www.raspberrypi.org/documentation/installation/installing-im
 This images is created from our step-by-step instructions at [phInfo
 repo](https://github.com/alexKleider/phInfo).
 
+We’ve tested this on the Raspberry Pi 3 and the Raspberry Pi Zero W.
+
 
 ## VirtualBox
 
